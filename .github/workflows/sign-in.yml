@@ -1,0 +1,12 @@
+name: Call Authenticate to Salesforce Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-authenticate-action:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Trigger Authenticate to Salesforce Action
+      uses: Nimba-Solutions/Actions/.github/workflows/sign-in.yml@main
